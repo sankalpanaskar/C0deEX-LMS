@@ -150,7 +150,7 @@
             </li>
 
             <li class="active">
-                <a href="{{url('/student_course_details')}}">
+                <a href="{{url('/student_course')}}">
                     <i class="fa fa-dashboard"></i> <span>Course</span>
                 </a>
             </li>

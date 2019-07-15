@@ -14,15 +14,15 @@
     <section class="content">
         <div class="row">
             <div class="col-xs-12">
-                <div class="box">
-                    <div class="box-header">
-                        <a href="{{url('/add_course')}}" class="btn btn-success"><i class="fa fa-plus"></i> Add Course</a>
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Rank Wise Course</h3>
                     </div>
                     <div class="box-body">
                         <div class="box-group" id="accordion">
                             <div class="panel box box-primary">
                                 <div class="box-header with-border">
-                                    <h4 class="box-title course_b_t">
+                                    <h4 class="box-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
                                             Rank 1
                                         </a>
@@ -30,27 +30,39 @@
                                 </div>
                                 <div id="collapseOne" class="panel-collapse collapse in">
                                     <div class="box-body">
-                                        <a href="javascript:void(0);" class="btn btn-app">
-                                            <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
-                                        </a>
-                                        <a href="javascript:void(0);" class="btn btn-app" disabled>
-                                            <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
-                                        </a>
-                                        <a href="javascript:void(0);" class="btn btn-app" disabled>
-                                            <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
-                                        </a>
-                                        <a href="javascript:void(0);" class="btn btn-app" disabled>
-                                            <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
-                                        </a>
-                                        <a href="javascript:void(0);" class="btn btn-app" disabled>
-                                            <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
-                                        </a>
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <a class="btn btn-app">
+                                                    <i class="fa fa-graduation-cap"></i> Save
+                                                </a>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <a class="btn btn-app">
+                                                    <i class="fa fa-graduation-cap"></i> Save
+                                                </a>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <a class="btn btn-app">
+                                                    <i class="fa fa-graduation-cap"></i> Save
+                                                </a>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <a class="btn btn-app">
+                                                    <i class="fa fa-graduation-cap"></i> Save
+                                                </a>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <a class="btn btn-app">
+                                                    <i class="fa fa-graduation-cap"></i> Save
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="panel box box-danger">
                                 <div class="box-header with-border">
-                                    <h4 class="box-title course_b_t">
+                                    <h4 class="box-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
                                             Rank 2
                                         </a>
@@ -58,27 +70,13 @@
                                 </div>
                                 <div id="collapseTwo" class="panel-collapse collapse">
                                     <div class="box-body">
-                                        <a href="javascript:void(0);" class="btn btn-app" disabled>
-                                            <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
-                                        </a>
-                                        <a href="javascript:void(0);" class="btn btn-app" disabled>
-                                            <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
-                                        </a>
-                                        <a href="javascript:void(0);" class="btn btn-app" disabled>
-                                            <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
-                                        </a>
-                                        <a href="javascript:void(0);" class="btn btn-app" disabled>
-                                            <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
-                                        </a>
-                                        <a href="javascript:void(0);" class="btn btn-app" disabled>
-                                            <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
-                                        </a>
+
                                     </div>
                                 </div>
                             </div>
                             <div class="panel box box-success">
                                 <div class="box-header with-border">
-                                    <h4 class="box-title course_b_t">
+                                    <h4 class="box-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
                                             Rank 3
                                         </a>
@@ -86,21 +84,7 @@
                                 </div>
                                 <div id="collapseThree" class="panel-collapse collapse">
                                     <div class="box-body">
-                                        <a href="javascript:void(0);" class="btn btn-app" disabled>
-                                            <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
-                                        </a>
-                                        <a href="javascript:void(0);" class="btn btn-app" disabled>
-                                            <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
-                                        </a>
-                                        <a href="javascript:void(0);" class="btn btn-app" disabled>
-                                            <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
-                                        </a>
-                                        <a href="javascript:void(0);" class="btn btn-app" disabled>
-                                            <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
-                                        </a>
-                                        <a href="javascript:void(0);" class="btn btn-app" disabled>
-                                            <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
-                                        </a>
+
                                     </div>
                                 </div>
                             </div>

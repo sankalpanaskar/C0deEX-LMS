@@ -46,6 +46,3 @@ Route::get('/online_applicant_list', 'HomeController@online_applicant_list')->mi
 Route::get('/add_student', 'HomeController@add_student')->middleware('auth');
 
 Route::get('/student_dashboard', 'HomeController@student_dashboard')->middleware('auth');
-Route::get('/student_course_details', 'HomeController@student_course_details')->middleware('auth');
-
-

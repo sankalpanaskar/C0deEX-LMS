@@ -149,12 +149,6 @@
                 </a>
             </li>
 
-            <li class="active">
-                <a href="{{url('/student_course_details')}}">
-                    <i class="fa fa-dashboard"></i> <span>Course</span>
-                </a>
-            </li>
-
         </ul>
     </section>
     <!-- /.sidebar -->

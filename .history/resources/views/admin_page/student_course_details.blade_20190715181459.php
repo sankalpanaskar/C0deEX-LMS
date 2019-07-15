@@ -3,12 +3,11 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Course List
+            Course Details
         </h1>
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li><a href="#"><i class="fa fa-dashboard"></i> Course Details</a></li>
-            <li><a href="#" class="active"> Course List</a></li>
+            <li><a href="#" class="active"> Course</a></li>
         </ol>
     </section>
     <section class="content">
@@ -16,7 +15,7 @@
             <div class="col-xs-12">
                 <div class="box">
                     <div class="box-header">
-                        <a href="{{url('/add_course')}}" class="btn btn-success"><i class="fa fa-plus"></i> Add Course</a>
+                        <h4>Course</h4>
                     </div>
                     <div class="box-body">
                         <div class="box-group" id="accordion">

@@ -69,7 +69,9 @@ class HomeController extends Controller
 
     public function add_student()
     {
-        return view('admin_page.add_student');
+        $states=States::all();
+         $coursetype=Course_type::all();
+        return view('admin_page.add_student',compact('states','coursetype'));
     }
     public function student_list()
     {
@@ -101,28 +103,20 @@ class HomeController extends Controller
 
     public function add_course()
     {
-        
-        return view('admin_page.add_course');
+         $ct=Course_type::all();
+        return view('admin_page.add_course',compact('ct'));
     }
     public function course_list()
     {
-        return view('admin_page.course_list');
+         $co=Course::all();
+        return view('admin_page.course_list',compact('co'));
     }
     public function online_applicant_list()
     {
         return view('admin_page.online_applicant_list');
     }
 
-    public function student_dashboard()
-    {
-        return view('admin_page.student_dashboard');
-    }
-    public function student_course_details()
-    {
-        return view('admin_page.student_course_details');
-    }
 
-    
      
     
 

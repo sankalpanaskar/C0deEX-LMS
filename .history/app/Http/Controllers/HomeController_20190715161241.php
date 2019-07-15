@@ -106,6 +106,7 @@ class HomeController extends Controller
     }
     public function course_list()
     {
+         $co=Course::all();
         return view('admin_page.course_list');
     }
     public function online_applicant_list()
@@ -113,16 +114,7 @@ class HomeController extends Controller
         return view('admin_page.online_applicant_list');
     }
 
-    public function student_dashboard()
-    {
-        return view('admin_page.student_dashboard');
-    }
-    public function student_course_details()
-    {
-        return view('admin_page.student_course_details');
-    }
 
-    
      
     
 

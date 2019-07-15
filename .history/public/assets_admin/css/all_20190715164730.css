@@ -70,24 +70,3 @@
 .course_b_t a {
     display: block !important;
 }
-
-.btn-app {
-    border-radius: 3px;
-    position: relative;
-    padding: 15px 10px;
-    margin: 10px;
-    min-width: 220px;
-    height: 90px;
-    text-align: center;
-    color: #666;
-    border: 1px solid #ddd;
-    background-color: #f4f4f4;
-    font-size: 15px;
-}
-
-.btn-app>.fa,
-.btn-app>.glyphicon,
-.btn-app>.ion {
-    font-size: 35px;
-    display: block;
-}

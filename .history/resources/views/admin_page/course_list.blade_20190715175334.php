@@ -14,9 +14,9 @@
     <section class="content">
         <div class="row">
             <div class="col-xs-12">
-                <div class="box">
-                    <div class="box-header">
-                        <a href="{{url('/add_course')}}" class="btn btn-success"><i class="fa fa-plus"></i> Add Course</a>
+                <div class="box box-solid">
+                    <div class="box-header with-border">
+                        <a href="{{url('/student_list')}}" class="btn btn-success"><i class="fa fa-list"></i> Student List</a>
                     </div>
                     <div class="box-body">
                         <div class="box-group" id="accordion">

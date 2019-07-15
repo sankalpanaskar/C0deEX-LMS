@@ -117,12 +117,8 @@ class HomeController extends Controller
     {
         return view('admin_page.student_dashboard');
     }
-    public function student_course_details()
-    {
-        return view('admin_page.student_course_details');
-    }
 
-    
+
      
     
 
