@@ -1,0 +1,2 @@
+[06-Feb-2019 07:16:07 UTC] PHP Fatal error:  Trait 'App\Http\Controllers\Auth\RedirectsUsers' not found in /home/ubuntu/workspace/brightpixel/app/Http/Controllers/Auth/RegisterController.php on line 26
+[06-Feb-2019 07:16:37 UTC] PHP Fatal error:  Trait 'App\Http\Controllers\Auth\RedirectsUsers' not found in /home/ubuntu/workspace/brightpixel/app/Http/Controllers/Auth/RegisterController.php on line 27
