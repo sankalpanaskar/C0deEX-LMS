@@ -7,8 +7,7 @@
         </h1>
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li><a href="#"><i class="fa fa-dashboard"></i> Course Details</a></li>
-            <li><a href="#" class="active"> Course List</a></li>
+            <li><a href="#" class="active"> Course</a></li>
         </ol>
     </section>
     <section class="content">

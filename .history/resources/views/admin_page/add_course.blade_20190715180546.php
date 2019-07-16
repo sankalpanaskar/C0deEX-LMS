@@ -19,7 +19,7 @@
                 <div class="col-md-6">
                     <div class="box box-success">
                         <div class="box-header">
-                            <a href="{{url('/course_list')}}" class="btn btn-success"><i class="fa fa-list"></i> Course List</a>
+                            <a href="{{url('/rank_list')}}" class="btn btn-success"><i class="fa fa-list"></i> Course List</a>
                         </div>
                         <div class="box-body">
                             <div class="row">

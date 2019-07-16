@@ -143,18 +143,6 @@
 
             <li class="header">Student</li>
 
-            <li class="active">
-                <a href="{{url('/student_dashboard')}}">
-                    <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-                </a>
-            </li>
-
-            <li class="active">
-                <a href="{{url('/student_course_details')}}">
-                    <i class="fa fa-dashboard"></i> <span>Course</span>
-                </a>
-            </li>
-
         </ul>
     </section>
     <!-- /.sidebar -->

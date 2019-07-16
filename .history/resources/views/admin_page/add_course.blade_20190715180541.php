@@ -19,7 +19,7 @@
                 <div class="col-md-6">
                     <div class="box box-success">
                         <div class="box-header">
-                            <a href="{{url('/course_list')}}" class="btn btn-success"><i class="fa fa-list"></i> Course List</a>
+                            <a href="{{url('/rank_list')}}" class="btn btn-success"><i class="fa fa-list"></i> Course List</a>
                         </div>
                         <div class="box-body">
                             <div class="row">
@@ -44,7 +44,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Description</label>
-                                        <input type="text" class="form-control" placeholder="Enter Course Description">
+                                        <input type="text" class="form-control" placeholder="Enter Rank Description">
                                     </div>
                                 </div>
                             </div>

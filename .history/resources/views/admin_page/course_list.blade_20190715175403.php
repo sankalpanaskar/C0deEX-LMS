@@ -14,8 +14,8 @@
     <section class="content">
         <div class="row">
             <div class="col-xs-12">
-                <div class="box">
-                    <div class="box-header">
+                <div class="box box-solid">
+                    <div class="box-header with-border">
                         <a href="{{url('/add_course')}}" class="btn btn-success"><i class="fa fa-plus"></i> Add Course</a>
                     </div>
                     <div class="box-body">
