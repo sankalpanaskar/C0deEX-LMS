@@ -47,8 +47,6 @@ Route::get('/add_student', 'HomeController@add_student')->middleware('auth');
 
 Route::get('/student_dashboard', 'HomeController@student_dashboard')->middleware('auth');
 Route::get('/student_course_details', 'HomeController@student_course_details')->middleware('auth');
-Route::get('/student_course_page_iframe', 'HomeController@student_course_page_iframe')->middleware('auth');
-
 Route::get('/teacher_dashboard', 'HomeController@teacher_dashboard')->middleware('auth');
 
 Route::get('/teacher_course_assign', 'HomeController@teacher_course_assign')->middleware('auth');

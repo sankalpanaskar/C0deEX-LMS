@@ -95,6 +95,33 @@
             </li>
             <li class="treeview">
                 <a href="#">
+                    <i class="fa fa-laptop"></i>
+                    <span>Payment</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="javascript:void(0);"><i class="fa fa-circle-o"></i> Pay</a></li>
+                    <li><a href="javascript:void(0);"><i class="fa fa-circle-o"></i> Payment List</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-edit"></i>
+                    <span>SMS</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="javascript:void(0);"><i class="fa fa-circle-o"></i> Write Message</a></li>
+                    <li><a href="javascript:void(0);"><i class="fa fa-circle-o"></i> Send Message</a></li>
+                    <li><a href="javascript:void(0);"><i class="fa fa-circle-o"></i> SMS Settings</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
                     <i class="fa fa-table"></i> <span>Settings</span>
                     <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
@@ -104,6 +131,14 @@
                     <li><a href="javascript:void(0);"><i class="fa fa-circle-o"></i> General Settings</a></li>
                     <li><a href="javascript:void(0);"><i class="fa fa-circle-o"></i> Report Settings</a></li>
                 </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <i class="fa fa-calendar"></i> <span>Calendar</span>
+                    <span class="pull-right-container">
+              <small class="label pull-right bg-blue">17</small>
+            </span>
+                </a>
             </li>
 
             <li class="header">Student</li>

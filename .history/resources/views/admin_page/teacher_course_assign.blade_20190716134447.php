@@ -3,11 +3,11 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Course Details
+            Course Assign
         </h1>
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li><a href="#" class="active"> Course</a></li>
+            <li><a href="#" class="active"> Course Assign</a></li>
         </ol>
     </section>
     <section class="content">
@@ -15,9 +15,40 @@
             <div class="col-xs-12">
                 <div class="box">
                     <div class="box-header">
-                        <h4>Course</h4>
+                        <h4>Student List</h4>
                     </div>
                     <div class="box-body">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Student Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Gender</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="">
+                                <tr>
+                                    <td>C0deEX/ST/01</td>
+                                    <td>John Doe</td>
+                                    <td>johndoe@gmail.com</td>
+                                    <td>1234567890</td>
+                                    <td>Male</td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-toggle="tooltip" title="View Sudent"><i class="fa fa-eye"></i></button>
+                                            <button type="button" class="btn btn-default" data-toggle="tooltip" title="Course Assign"><i class="fa fa-check"></i></button>
+                                            <button type="button" class="btn btn-default" data-toggle="tooltip" title="Hooray!"><i class="fa fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+
+                            </tfoot>
+                        </table>
                         <div class="box-group" id="accordion">
                             <div class="panel box box-primary">
                                 <div class="box-header with-border">
@@ -29,7 +60,12 @@
                                 </div>
                                 <div id="collapseOne" class="panel-collapse collapse in">
                                     <div class="box-body">
-                                        <a href="{{url('/student_course_page_iframe')}}" class="btn btn-app">
+                                        <a href="javascript:void(0);" class="btn btn-app">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default" data-toggle="tooltip" title="View Sudent"><i class="fa fa-eye"></i></button>
+                                                <button type="button" class="btn btn-default" data-toggle="tooltip" title="Course Assign"><i class="fa fa-check"></i></button>
+                                                <button type="button" class="btn btn-default" data-toggle="tooltip" title="Hooray!"><i class="fa fa-trash"></i></button>
+                                            </div>
                                             <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
                                         </a>
                                         <a href="javascript:void(0);" class="btn btn-app" disabled>
@@ -213,40 +249,7 @@
             'info': true,
             'autoWidth': false
         })
-        $('.check').click(function() {
-
-            //alert($(this).data('id'));
-            var u = "{{url('/applicant_fetch')}}/" + $(this).data('id');
-
-            $.getJSON(
-                u,
-                function(res) {
-                    console.log(res);
-
-                    res[0].forEach(function(data) {
-                        $('#applicant_name').text(data.fullname);
-                        $('#applicant_email').text(data.email);
-                        $('#applicant_phone').text(data.phone);
-                        $('#applicant_dob').text(data.dob);
-                        $('#applicant_sex').text(data.gender);
-                        $('#applicant_address').text(data.address);
-                        $('#applicant_state').text(data.states.state_name);
-                        $('#applicant_district').text(data.districts.district_name);
-                        $('#applicant_city').text(data.city);
-                        $('#applicant_qualification').text(data.education);
-                        $('#applicant_course_type').text(res[1][0].course_type.course_type_name);
-                        $('#applicant_course').text(res[1][0].course_name);
-                        $('#applicant_message').text(data.msg);
-
-
-                    });
-
-                }
-            )
-
-
-            //alert($("#3").find("td:eq(3)").text());
-        })
+        $('[data-toggle="tooltip"]').tooltip();
     })
 </script>
 @endsection

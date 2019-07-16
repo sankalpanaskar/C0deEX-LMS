@@ -121,15 +121,6 @@ class HomeController extends Controller
     {
         return view('admin_page.student_course_details');
     }
-    public function student_course_page_iframe()
-    {
-        return view('admin_page.student_course_page_iframe');
-    }
-    
-    public function teacher_dashboard()
-    {
-        return view('admin_page.teacher_dashboard');
-    }
     public function teacher_course_assign()
     {
         return view('admin_page.teacher_course_assign');

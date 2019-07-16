@@ -29,7 +29,7 @@
     <!-- Select2 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css">
     <!-- iCheck for checkboxes and radio inputs -->
-    <link rel="stylesheet" href="{{asset('assets_admin/css/all.css')}}">
+    <link rel="stylesheet" href="{{asset('assets_admin/css/all.scss')}}">
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-wysiwyg/0.3.3/bootstrap3-wysihtml5.min.css">
     <!-- bootstrap DataTable -->

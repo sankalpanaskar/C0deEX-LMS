@@ -18,6 +18,37 @@
                         <h4>Course</h4>
                     </div>
                     <div class="box-body">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Student Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Gender</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="">
+                                <tr>
+                                    <td>C0deEX/ST/01</td>
+                                    <td>John Doe</td>
+                                    <td>johndoe@gmail.com</td>
+                                    <td>1234567890</td>
+                                    <td>Male</td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default"><i class="fa fa-eye"></i></button>
+                                            <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i></button>
+                                            <button type="button" class="btn btn-default"><i class="fa fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+
+                            </tfoot>
+                        </table>
                         <div class="box-group" id="accordion">
                             <div class="panel box box-primary">
                                 <div class="box-header with-border">
@@ -29,7 +60,7 @@
                                 </div>
                                 <div id="collapseOne" class="panel-collapse collapse in">
                                     <div class="box-body">
-                                        <a href="{{url('/student_course_page_iframe')}}" class="btn btn-app">
+                                        <a href="javascript:void(0);" class="btn btn-app">
                                             <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
                                         </a>
                                         <a href="javascript:void(0);" class="btn btn-app" disabled>

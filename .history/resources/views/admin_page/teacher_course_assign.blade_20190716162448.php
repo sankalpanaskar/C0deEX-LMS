@@ -3,11 +3,11 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
         <h1>
-            Course Details
+            Course Assign
         </h1>
         <ol class="breadcrumb">
             <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li><a href="#" class="active"> Course</a></li>
+            <li><a href="#" class="active"> Course Assign</a></li>
         </ol>
     </section>
     <section class="content">
@@ -15,9 +15,40 @@
             <div class="col-xs-12">
                 <div class="box">
                     <div class="box-header">
-                        <h4>Course</h4>
+                        <h4>Student List</h4>
                     </div>
                     <div class="box-body">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Student Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Gender</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="">
+                                <tr>
+                                    <td>C0deEX/ST/01</td>
+                                    <td>John Doe</td>
+                                    <td>johndoe@gmail.com</td>
+                                    <td>1234567890</td>
+                                    <td>Male</td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default" data-toggle="tooltip" title="View Sudent"><i class="fa fa-eye"></i></button>
+                                            <button type="button" class="btn btn-default" data-toggle="tooltip" title="Course Assign"><i class="fa fa-check"></i></button>
+                                            <button type="button" class="btn btn-default" data-toggle="tooltip" title="Hooray!"><i class="fa fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+
+                            </tfoot>
+                        </table>
                         <div class="box-group" id="accordion">
                             <div class="panel box box-primary">
                                 <div class="box-header with-border">
@@ -29,8 +60,15 @@
                                 </div>
                                 <div id="collapseOne" class="panel-collapse collapse in">
                                     <div class="box-body">
-                                        <a href="{{url('/student_course_page_iframe')}}" class="btn btn-app">
+                                        <a href="javascript:void(0);" class="btn btn-app-teacher">
                                             <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
+                                            <div class="btn-group" style="position: absolute;left: 73px;bottom: 5px;">
+                                                <button type="button" class="btn btn-success complete_sourse" data-toggle="tooltip" title="Complete"><i class="fa fa-check"></i></button>
+                                                <button type="button" class="btn btn-danger complete_sourse" data-toggle="tooltip" title="Cancel"><i class="fa fa-trash"></i></button>
+                                            </div>
+                                            <div>
+
+                                            </div>
                                         </a>
                                         <a href="javascript:void(0);" class="btn btn-app" disabled>
                                             <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
@@ -121,73 +159,7 @@
                 <h4 class="modal-title">Applicant Details</h4>
             </div>
             <div class="modal-body">
-                <table class="table table-bordered">
-                    <tr>
-                        <td>Applicant Name</td>
-                        <td>:</td>
-                        <td id="applicant_name"></td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td>:</td>
-                        <td id="applicant_email"></td>
-                    </tr>
-                    <tr>
-                        <td>Phone</td>
-                        <td>:</td>
-                        <td id="applicant_phone"></td>
-                    </tr>
-                    <tr>
-                        <td>DOB</td>
-                        <td>:</td>
-                        <td id="applicant_dob"></td>
-                    </tr>
-                    <tr>
-                        <td>SEX</td>
-                        <td>:</td>
-                        <td id="applicant_sex"></td>
-                    </tr>
-                    <tr>
-                        <td>Address</td>
-                        <td>:</td>
-                        <td id="applicant_address"></td>
-                    </tr>
-                    <tr>
-                        <td>State</td>
-                        <td>:</td>
-                        <td id="applicant_state"></td>
-                    </tr>
-                    <tr>
-                        <td>District</td>
-                        <td>:</td>
-                        <td id="applicant_district"></td>
-                    </tr>
-                    <tr>
-                        <td>City</td>
-                        <td>:</td>
-                        <td id="applicant_city"></td>
-                    </tr>
-                    <tr>
-                        <td>Education Qualification</td>
-                        <td>:</td>
-                        <td id="applicant_qualification"></td>
-                    </tr>
-                    <tr>
-                        <td>Course Type</td>
-                        <td>:</td>
-                        <td id="applicant_course_type"></td>
-                    </tr>
-                    <tr>
-                        <td>Course</td>
-                        <td>:</td>
-                        <td id="applicant_course"></td>
-                    </tr>
-                    <tr>
-                        <td>Message</td>
-                        <td>:</td>
-                        <td id="applicant_message"></td>
-                    </tr>
-                </table>
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
@@ -213,39 +185,25 @@
             'info': true,
             'autoWidth': false
         })
-        $('.check').click(function() {
+        $('[data-toggle="tooltip"]').tooltip();
 
-            //alert($(this).data('id'));
-            var u = "{{url('/applicant_fetch')}}/" + $(this).data('id');
-
-            $.getJSON(
-                u,
-                function(res) {
-                    console.log(res);
-
-                    res[0].forEach(function(data) {
-                        $('#applicant_name').text(data.fullname);
-                        $('#applicant_email').text(data.email);
-                        $('#applicant_phone').text(data.phone);
-                        $('#applicant_dob').text(data.dob);
-                        $('#applicant_sex').text(data.gender);
-                        $('#applicant_address').text(data.address);
-                        $('#applicant_state').text(data.states.state_name);
-                        $('#applicant_district').text(data.districts.district_name);
-                        $('#applicant_city').text(data.city);
-                        $('#applicant_qualification').text(data.education);
-                        $('#applicant_course_type').text(res[1][0].course_type.course_type_name);
-                        $('#applicant_course').text(res[1][0].course_name);
-                        $('#applicant_message').text(data.msg);
-
-
-                    });
-
-                }
-            )
-
-
-            //alert($("#3").find("td:eq(3)").text());
+        $('.complete_sourse').click(function() {
+            swal({
+                    title: "Are you sure?",
+                    text: "Once deleted, you will not be able to recover this imaginary file!",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        swal("Poof! Your imaginary file has been deleted!", {
+                            icon: "success",
+                        });
+                    } else {
+                        swal("Your imaginary file is safe!");
+                    }
+                });
         })
     })
 </script>

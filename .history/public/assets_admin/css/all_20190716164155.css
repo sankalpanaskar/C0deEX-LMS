@@ -85,15 +85,11 @@
     font-size: 15px;
 }
 
-.t-group {
+.btn-group {
     display: none;
-    position: absolute;
-    left: 72px;
-    bottom: 40px;
-    z-index: 100;
 }
 
-.btn-app:hover>.t-group {
+.btn-app:hover>.btn-group>.back-drop-teacher {
     display: block !important;
 }
 
@@ -114,11 +110,6 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: #00000073;
+    background: #000;
     display: none;
-}
-
-.t-course-complete {
-    border: 2px solid green;
-    color: green;
 }

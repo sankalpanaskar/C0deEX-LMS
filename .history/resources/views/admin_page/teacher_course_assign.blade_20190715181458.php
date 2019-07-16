@@ -29,7 +29,7 @@
                                 </div>
                                 <div id="collapseOne" class="panel-collapse collapse in">
                                     <div class="box-body">
-                                        <a href="{{url('/student_course_page_iframe')}}" class="btn btn-app">
+                                        <a href="javascript:void(0);" class="btn btn-app">
                                             <i class="fa fa-graduation-cap"></i> Scratch With Javascript Basic
                                         </a>
                                         <a href="javascript:void(0);" class="btn btn-app" disabled>
